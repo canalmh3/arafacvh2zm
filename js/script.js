@@ -10,3 +10,9 @@ var links = [
     var randomLink = links[randomIndex];
 
     document.getElementById("whatsapp-button").href = randomLink;
+<!-- Para redirecionar automaticamente descomente a linha excluindo os "//" -->
+    <!-- Redirecionar para o link aleatório -->
+    // setTimeout(function() {
+    // window.location.href = randomLink;
+    // }, 3000); // Redirecionar após 3 segundos (3000 milissegundos)
+<!-- Para redirecionar automaticamente descomente a linha -->
