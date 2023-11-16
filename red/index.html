@@ -112,23 +112,18 @@
     </div>
   </div>
   
-  <script>
-    var links = [
-      "https://seulinkaqui.com",
-      "https://seulinkaqui.com",
-      "https://seulinkaqui.com",
-      "https://seulinkaqui.com"
-    ];
-
-    var randomIndex = Math.floor(Math.random() * links.length);
-    var randomLink = links[randomIndex];
-
-    document.getElementById("whatsapp-button").href = randomLink;
-
-    // Redirecionar para o link aleatório
-    setTimeout(function() {
-      window.location.href = randomLink;
-    }, 0); // Redirecionar após 3 segundos (3000 milissegundos)
-  </script>
+ <script>
+var urls = new Array();
+//GRUPO 01 - LANÇAMENTO;
+urls[0] = "https://chat.whatsapp.com/grupoaqui";
+//GRUPO 02 - LANÇAMENTO;
+urls[1] = "https://chat.whatsapp.com/grupoaqui";
+//GRUPO 03 - LANÇAMENTO;
+urls[2] = "https://chat.whatsapp.com/grupoaqui";
+//GRUPO 04 - LANÇAMENTO;
+urls[3] = "https://chat.whatsapp.com/grupoaqui";
+var random = Math.floor(Math.random()*urls.length);
+window.location = urls[random];
+</script>
 </body>
 </html>
