@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ir Para Whatsapp</title>
+  <meta charset="UTF-8">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #333;
+      background-color: #fff;
+    }
+    
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 50px 0;
+    }
+    
+    img {
+      width: 15%;
+      max-width: 100px;
+      height: auto;
+    }
+    
+    .iconelike {
+      display: block;
+      margin: 0 auto;
+      width: 30%;
+      max-width: 300px;
+      height: auto;
+    }
+    
+    h1 {
+      color: #4c6a74;
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-size: 23px;
+      margin-top: 20px;
+    }
+    
+    p {
+      color: #54595f;
+      margin-bottom: 20px;
+    }
+    
+    a.button-whatsapp {
+      display: flex;
+      width: 80%;
+      max-width: 80%;
+      margin: 50px auto;
+      background-color: #25d366;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      font-size: 36px;
+      padding: 20px 20px;
+      text-decoration: none;
+      border-radius: 35px;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+      transition: background-color 0.3s ease;
+    }
+    
+    a.button-whatsapp:hover {
+      background-color: #128C7E;
+    }
+    
+    .rodapedosite {
+      margin-top: 650px;
+      background-color: #54595f;
+      color: #fff;
+      padding: 100px 5px;
+      font-size: 14px;
+    }
+    
+    .rodapedosite p {
+      margin-bottom: 10px;
+      color: white;
+    }
+    
+    .rodapedosite a {
+      color: #c36;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="iconelike" src="https://imgur.com/glfQXRa.png" alt="Like" />
+    <h1>TUDO CERTO</h1>
+    <p>Toque no botão abaixo para ser redirecionado para o WhatsApp!</p>
+    <a class="button-whatsapp" id="whatsapp-button" href="#" target="_blank">
+      <img src="https://imgur.com/uJbUDi8.png" alt="WhatsApp" />
+      CHAME NO WHATSAPP
+    </a>
+    <div class="rodapedosite">
+      <p>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site.</p>
+      <a href="/termos-de-uso.html">Termos de Uso</a>
+      <a href="/politicas-de-privacidade.html">Políticas de Privacidade</a>
+    </div>
+  </div>
+  
+  <script>
+    var links = [
+      "https://seulinkaqui.com",
+      "https://seulinkaqui.com",
+      "https://seulinkaqui.com",
+      "https://seulinkaqui.com"
+    ];
+
+    var randomIndex = Math.floor(Math.random() * links.length);
+    var randomLink = links[randomIndex];
+
+    document.getElementById("whatsapp-button").href = randomLink;
+
+    // Redirecionar para o link aleatório
+    setTimeout(function() {
+      window.location.href = randomLink;
+    }, 3000); // Redirecionar após 3 segundos (3000 milissegundos)
+  </script>
+</body>
+</html>
