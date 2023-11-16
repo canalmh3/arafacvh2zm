@@ -26,23 +26,26 @@
   <script src="js/pixel.js"></script>-->
 
   <script> 
-// Script para gerar link de redirecionamento aleatório para o WhatsApp
-var links = [
-      "https://www.homehost.com.br/",
-      "https://www.homehost.com.br/",
-      "https://www.homehost.com.br/",
-      "https://www.homehost.com.br/"
+<!-- Para redirecionar automaticamente descomente a linha excluindo os "//" -->
+<script>
+    // Script para gerar link de redirecionamento aleatório para o WhatsApp
+    var links = [
+        "https://www.homehost.com.br/",
+        "https://www.homehost.com.br/",
+        "https://www.homehost.com.br/",
+        "https://www.homehost.com.br/"
     ];
 
     var randomIndex = Math.floor(Math.random() * links.length);
     var randomLink = links[randomIndex];
 
     document.getElementById("whatsapp-button").href = randomLink;
-<!-- Para redirecionar automaticamente descomente a linha excluindo os "//" -->
-    <!-- Redirecionar para o link aleatório -->
-    // setTimeout(function() {
-    // window.location.href = randomLink;
-    // }, 3000); // Redirecionar após 3 segundos (3000 milissegundos)
-<!-- Para redirecionar automaticamente descomente a linha --></script>
+
+    // Redirecionar para o link aleatório
+    setTimeout(function() {
+        window.location.href = randomLink;
+    }, 3000); // Redirecionar após 3 segundos (3000 milissegundos)
+</script>
+<!-- Para redirecionar automaticamente descomente a linha -->
 </body>
 </html>
