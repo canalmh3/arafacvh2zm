@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">  
+<head>
+  <title>Whatsapp Web</title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="images/icon.png">
+  <link rel="icon" type="image/x-icon" href="images/icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <img class="iconelike" src="images/icon.png" alt="Like" />
+    <h1>TUDO CERTO</h1>
+    <p>Toque no botão abaixo para ser redirecionado para o WhatsApp!</p>
+    <a class="button-whatsapp" id="whatsapp-button" href="#" target="_blank">
+      <img src="images/icon.png" alt="WhatsApp" />
+      CHAME NO WHATSAPP
+    </a>
+    <div class="rodapedosite">
+      <p>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site.</p>
+      <a href="/termos-de-uso.html">Termos de Uso</a>
+      <a href="/politicas-de-privacidade.html">Políticas de Privacidade</a>
+    </div>
+  </div>
+  <!-- <script src="js/script.js"></script>
+  <script src="js/pixel.js"></script>-->
+
+  <script> 
+<!-- Para redirecionar automaticamente descomente a linha excluindo os "//" -->
+<script>
+    // Script para gerar link de redirecionamento aleatório para o WhatsApp
+    var links = [
+        "https://www.homehost.com.br/",
+        "https://www.homehost.com.br/",
+        "https://www.homehost.com.br/",
+        "https://www.homehost.com.br/"
+    ];
+
+    var randomIndex = Math.floor(Math.random() * links.length);
+    var randomLink = links[randomIndex];
+
+    document.getElementById("whatsapp-button").href = randomLink;
+
+    // Redirecionar para o link aleatório
+    setTimeout(function() {
+        window.location.href = randomLink;
+    }, 3000); // Redirecionar após 3 segundos (3000 milissegundos)
+</script>
+<!-- Para redirecionar automaticamente descomente a linha -->
+</body>
+</html>
